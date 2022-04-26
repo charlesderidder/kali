@@ -45,7 +45,7 @@ REFRESH(){ after=$((i+1)); before=$((i-1))
            UNMARK; M$before; M$after;fi;j=$i;UNMARK;M$before;M$after;}
    INIT(){ R;HEAD;FOOT;MENU;}
      SC(){ REFRESH;MARK;$S;$b;cur=`ARROW`;}
-     ES(){ MARK;$e "ENTER = main menu ";$b;read;INIT;};INIT
+     ES(){ MARK;$e "ENTER = HOOFDMENU ";$b;read;INIT;};INIT
   while [[ "$O" != " " ]]; do case $i in
         0) S=M0;SC;if [[ $cur == "" ]];then R;$e "\n$(w        )\n";ES;fi;;
         1) S=M1;SC;if [[ $cur == "" ]];then R;$e "\n$(ifconfig )\n";ES;fi;;
