@@ -29,4 +29,5 @@ echo -e "\n"
 
 rm install.sh
 
-echo "test"
+echo "test\"
+read -p "Press [Enter] key to start backup..."
