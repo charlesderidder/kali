@@ -31,7 +31,9 @@ echo -e "\n"
 
 
 printf "%s " "Press enter to continue"
-read ans
+
+# Clear screen
+# read ans
 
 HEIGHT=15
 WIDTH=40
