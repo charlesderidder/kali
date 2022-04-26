@@ -4,7 +4,7 @@
 echo ""
 echo "ANONYMOUS SETUP FOR KALI LINUX ROLLING"
 echo ""
-echo "[+] Package list updated !"
+printf "%s " "Press enter to continue"
 echo ""
 read -p "Moet Kali geupdate worden? [J/N] (Y als je dit niet zeker weet) " update
 case $update in
@@ -12,6 +12,8 @@ case $update in
 	[Yy]* ) break;;
        	* ) echo "You didn't type Y or n, aborting!"; break;;
 esac;
+echo "[+] Package list updated !"
+printf "%s " "Press enter to continue"
 
 clear
 
