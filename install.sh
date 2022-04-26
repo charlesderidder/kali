@@ -19,3 +19,4 @@ curl ipecho.net/plain
 
 echo -e "\n"
 ls -lart
+rm install.sh
