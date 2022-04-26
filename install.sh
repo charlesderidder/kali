@@ -1,11 +1,6 @@
 # wget -q https://raw.githubusercontent.com/charlesderidder/kali/main/install.sh && sudo bash ./install.sh
 
 
-
-#/bin/bash
-# by oToGamez
-# www.pro-toolz.net
-
       E='echo -e';e='echo -en';trap "R;exit" 2
     ESC=$( $e "\e")
    TPUT(){ $e "\e[${1};${2}H";}
@@ -21,20 +16,20 @@
            $E "   x                                          x"
            done
            WRITE;MARK;TPUT 1 5
-           $E "BASH SELECTION MENU                       ";UNMARK;}
+           $E "KALI MENU                                     ";UNMARK;}
            i=0; CLEAR; CIVIS;NULL=/dev/null
    FOOT(){ MARK;TPUT 13 5
            printf "ENTER - SELECT,NEXT                       ";UNMARK;}
   ARROW(){ read -s -n3 key 2>/dev/null >&2
            if [[ $key = $ESC[A ]];then echo up;fi
            if [[ $key = $ESC[B ]];then echo dn;fi;}
-     M0(){ TPUT  4 20; $e "Login info";}
-     M1(){ TPUT  5 20; $e "Network";}
-     M2(){ TPUT  6 20; $e "Disk";}
-     M3(){ TPUT  7 20; $e "Routing";}
-     M4(){ TPUT  8 20; $e "Time";}
-     M5(){ TPUT  9 20; $e "ABOUT  ";}
-     M6(){ TPUT 10 20; $e "EXIT   ";}
+     M0(){ TPUT  4 20; $e "Login informatie";}
+     M1(){ TPUT  5 20; $e "Network informatie";}
+     M2(){ TPUT  6 20; $e "Schijf informatie";}
+     M3(){ TPUT  7 20; $e "IP Routing tabel";}
+     M4(){ TPUT  8 20; $e "Tijd";}
+     M5(){ TPUT  9 20; $e "Over  ";}
+     M6(){ TPUT 10 20; $e "SLUITEN   ";}
       LM=6
    MENU(){ for each in $(seq 0 $LM);do M${each};done;}
     POS(){ if [[ $cur == up ]];then ((i--));fi
