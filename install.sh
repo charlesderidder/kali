@@ -8,6 +8,7 @@ echo "[*] Updating package list ..."
 echo ""
 apt update
 echo ""
+clear
 echo "[+] Package list updated !"
 echo ""
 read -p "Is Tor installed on this computer? [Y/n] (N if unsure) " tor
