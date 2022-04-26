@@ -1,5 +1,25 @@
 # wget -q https://raw.githubusercontent.com/charlesderidder/kali/main/install.sh && sudo bash ./install.sh
 
+# https://github.com/keeganjk/kali-anonymous/blob/master/setup
+echo ""
+echo "ANONYMOUS SETUP FOR KALI LINUX ROLLING"
+echo ""
+echo "[*] Updating package list ..."
+echo ""
+apt update
+echo ""
+echo "[+] Package list updated !"
+echo ""
+read -p "Is Tor installed on this computer? [Y/n] (N if unsure) " tor
+case $tor in
+	[Nn]* ) apt install tor -y; break;;
+	[Yy]* ) break;;
+       	* ) echo "You didn't type Y or n, aborting!"; break;;
+esac;
+
+
+
+
 # First run
 sudo apt update
 sudo apt upgrade -y
