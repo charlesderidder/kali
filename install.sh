@@ -28,7 +28,7 @@
      M2(){ TPUT  6 20; $e "Schijf informatie";}
      M3(){ TPUT  7 20; $e "IP Routing tabel";}
      M4(){ TPUT  8 20; $e "Tijd";}
-     M5(){ TPUT  9 20; $e "Over  ";}
+     M5(){ TPUT  9 20; $e "Bestand opschonen  ";}
      M6(){ TPUT 10 20; $e "SLUITEN   ";}
       LM=6
    MENU(){ for each in $(seq 0 $LM);do M${each};done;}
@@ -51,7 +51,7 @@ REFRESH(){ after=$((i+1)); before=$((i-1))
         2) S=M2;SC;if [[ $cur == "" ]];then R;$e "\n$(df -h    )\n";ES;fi;;
         3) S=M3;SC;if [[ $cur == "" ]];then R;$e "\n$(route -n )\n";ES;fi;;
         4) S=M4;SC;if [[ $cur == "" ]];then R;$e "\n$(date     )\n";ES;fi;;
-        5) S=M5;SC;if [[ $cur == "" ]];then R;$e "\n$($e by oTo)\n";ES;fi;;
+        5) S=M5;SC;if [[ $cur == "" ]];then R;$e "\n$(rm install.sh)\n";ES;fi;;
         6) S=M6;SC;if [[ $cur == "" ]];then R;exit 0;fi;;
  esac;POS;done
  
