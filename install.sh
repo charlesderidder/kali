@@ -29,5 +29,5 @@ echo -e "\n"
 
 rm install.sh
 
-echo "test\"
-read -p "Press [Enter] key to start backup..."
+printf "%s " "Press enter to continue"
+read ans
