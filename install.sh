@@ -52,7 +52,7 @@ REFRESH(){ after=$((i+1)); before=$((i-1))
         2) S=M2;SC;if [[ $cur == "" ]];then R;$e "\n$(df -h    )\n";ES;fi;;
         3) S=M3;SC;if [[ $cur == "" ]];then R;$e "\n$(route -n )\n";ES;fi;;
         4) S=M4;SC;if [[ $cur == "" ]];then R;$e "\n$(date     )\n";ES;fi;;
-        5) S=M5;SC;if [[ $cur == "" ]];then R;$e "\n$(rm install.sh)\n";ES;fi;;
+        5) S=M5;SC;if [[ $cur == "" ]];then R;$e "\n$(sudo su rm install.sh)\n";ES;fi;;
         5) S=M6;SC;if [[ $cur == "" ]];then R;$e "\n$(sudo apt update)\n";ES;fi;;
         6) S=M7;SC;if [[ $cur == "" ]];then R;exit 0;fi;;
  esac;POS;done
