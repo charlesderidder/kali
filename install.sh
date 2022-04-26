@@ -28,7 +28,7 @@ curl ipecho.net/plain
 
 echo -e "\n"
 
-rm install.sh
+
 
 printf "%s " "Press enter to continue"
 read ans
@@ -64,3 +64,12 @@ case $CHOICE in
             echo "You chose Option 3"
             ;;
 esac
+
+
+
+
+
+
+
+
+rm install.sh
