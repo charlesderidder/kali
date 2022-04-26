@@ -1,13 +1,3 @@
-$ files="$(ls -A .)"
-$ select filename in ${files}; do echo "You selected ${filename}"; done
-1) file1
-2) file2
-3) file3
-#? 1
-You selected file1
-#?
-
-
 # First run
 sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove && sudo apt autoclean
 
