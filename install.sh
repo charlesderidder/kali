@@ -4,21 +4,16 @@
 echo ""
 echo "ANONYMOUS SETUP FOR KALI LINUX ROLLING"
 echo ""
-echo "[*] Updating package list ..."
-echo ""
-apt update
-echo ""
-clear
 echo "[+] Package list updated !"
 echo ""
-read -p "Is Tor installed on this computer? [Y/n] (N if unsure) " tor
-case $tor in
-	[Nn]* ) apt install tor -y; break;;
+read -p "Moet Kali geupdate worden? [J/N] (Y als je dit niet zeker weet) " update
+case $update in
+	[Nn]* ) apt update -y; break;;
 	[Yy]* ) break;;
        	* ) echo "You didn't type Y or n, aborting!"; break;;
 esac;
 
-
+clear
 
 
 # First run
