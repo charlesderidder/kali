@@ -22,6 +22,7 @@ sudo usermod -aG docker charlesderidder
 #clear
 #echo -e "TEST\n2eTEST\n"
 
+echo -e "\n"
 echo "IP-adres:"
 curl ipecho.net/plain
 
