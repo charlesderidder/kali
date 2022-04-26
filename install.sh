@@ -8,7 +8,7 @@ echo "[+] Package list updated !"
 echo ""
 read -p "Moet Kali geupdate worden? [J/N] (Y als je dit niet zeker weet) " update
 case $update in
-	[Nn]* ) apt update -y; break;;
+	[Nn]* ) sudoapt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y; break;;
 	[Yy]* ) break;;
        	* ) echo "You didn't type Y or n, aborting!"; break;;
 esac;
