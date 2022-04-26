@@ -31,7 +31,7 @@
      M5(){ TPUT  9 20; $e "Bestand opschonen  ";}
      M6(){ TPUT 10 20; $e "Kali opschonen  ";}
      M7(){ TPUT 11 20; $e "SLUITEN   ";}
-      LM=6
+      LM=7
    MENU(){ for each in $(seq 0 $LM);do M${each};done;}
     POS(){ if [[ $cur == up ]];then ((i--));fi
            if [[ $cur == dn ]];then ((i++));fi
