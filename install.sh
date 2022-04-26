@@ -16,3 +16,6 @@ clear
 echo -e "TEST\n2eTEST\n"
 alias cls='printf "\033c"'
 curl ipecho.net/plain
+
+echo -e "\n"
+ls -lart
