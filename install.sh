@@ -27,3 +27,5 @@ curl ipecho.net/plain
 echo -e "\n"
 
 rm install.sh
+
+echo "test"
